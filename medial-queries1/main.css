@@ -1,3 +1,68 @@
+/* Universal Styling */
 body {
   background: blanchedalmond;
+  font-weight: 600;
 }
+
+.a, .b, .c {
+  border: 3px solid white;
+}
+
+/* Styling for mobile */
+.container {
+  margin: 1em auto;
+  justify-content: center;
+  width: 80%;
+}
+
+.a {
+  min-height: 15vh;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  padding: 1em 1em 1em 1em;
+}
+
+.b {
+  height: 70vh;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  padding: 1em 1em 1em 1em;
+}
+
+.c {
+  height: 15vh;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  padding: 1em 1em 1em 1em;
+}
+
+/* Styling for tablets and desktops, break off point is 800px width viewport */
+@media (min-width: 800px) {
+  .container {
+    margin: 1em 1em 1em 1em;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vh;
+  }
+
+  .a {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    width: 100%;
+    min-height: 15vh;
+    padding: 1em 1em 1em 1em;
+  }
+
+  .b {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    height: 70vh;
+    width: 59%;
+    padding: 1em 1em 1em 1em;
+  }
+  
+  .c {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    height: 70vh;
+    width: 29%;
+    padding: 1em 1em 1em 1em;
+  }
+}
+

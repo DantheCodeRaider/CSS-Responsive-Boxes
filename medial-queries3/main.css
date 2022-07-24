@@ -1,3 +1,135 @@
+/* Universal Styling */
+
 body {
   background: peachpuff;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  border: 3px solid white;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+/* Styling for mobile */
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  width: 90%;
+  height: 100%;
+}
+
+.a {
+  height: 15vh;
+  margin: 0.5em 0.5em;
+  padding: 1em 1em 1em 1em;
+}
+
+.sixbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 15vh;
+  margin: 0.5em 0.5em;
+  padding: 0;
+}
+
+.b {
+  min-width: 20%;
+  margin-bottom: .5em;
+  padding: 1em 1em 1em 1em;
+  flex-grow: 1;
+}
+
+.c {
+  min-width: 20%;
+  margin: 0em 1em .5em 1em;
+  padding: 1em 1em 1em 1em;
+  flex-grow: 1;
+}
+
+.d {
+  min-width: 20%;
+  margin-bottom: .5em;
+  padding: 1em 1em 1em 1em;
+  flex-grow: 1;
+}
+.e {
+  min-width: 20%;
+  margin: 0em;
+  padding: 1em 1em 1em 1em;
+  flex-grow: 1;
+}
+
+.f {
+  min-width: 20%;
+  margin: 0em 1em;
+  padding: 1em 1em 1em 1em;
+  flex-grow: 1;
+}
+
+.g {
+  min-width: 20%;
+  margin: 0em;
+  padding: 1em 1em 1em 1em;
+  flex-grow: 1;
+}
+
+.h {
+  height: 15vh;
+  margin: 0.5em 0.5em;
+  padding: 1em 1em 1em 1em;
+}
+
+
+
+/* Styling for tablets and desktops, break off point is 800px width viewport */
+@media (min-width: 800px) {
+  .container {
+    margin: 1em;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-auto-rows: minmax(300px, auto);
+    grid-auto-columns: minmax(25%, auto);
+    column-gap: 0;
+    row-gap: 0;
+    width: 90%;
+    height: 100%;
+  }
+  
+  .a {
+    grid-area: 1 / 1 / span 1 / span 4;
+    padding: 1em 1em 1em 1em;
+    height: auto;
+    width: auto;
+  }
+  
+  .sixbox {
+    grid-area: 2 / 1 / span 2 / span 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    height: auto;
+    width: auto;
+  }
+
+  .h {
+    grid-area: 2 / 4 / span 2 / span 1;
+    padding: 1em 1em 1em 1em;
+    height: auto;
+    width: auto;
+  }
 }

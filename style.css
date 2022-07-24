@@ -1,0 +1,40 @@
+.thumbnail-one, .thumbnail-two, .thumbnail-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+  }
+
+  iframe {
+    width: 1440px;
+    height: 900px;
+  }
+
+.thumbnail {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+  .thumbnail-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  body {
+    background-color: lightblue;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
